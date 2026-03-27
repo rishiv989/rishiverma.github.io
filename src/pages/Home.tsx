@@ -7,6 +7,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-black text-white py-32 pt-40">
         <div className="container mx-auto px-4 text-center">
+          <div className="mb-10 flex justify-center">
+            <img 
+              src="/profile.jpeg" 
+              alt="Rishi Rajesh Verma profile" 
+              className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-blue-500/50 shadow-2xl shadow-blue-500/20"
+            />
+          </div>
           <h1 className="text-6xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Rishi Rajesh Verma</h1>
           <p className="text-2xl font-semibold mb-8 text-blue-300">AI/ML Engineer & Data Scientist</p>
           <p className="text-lg mb-10 text-gray-400 max-w-2xl mx-auto">
