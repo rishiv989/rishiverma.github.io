@@ -47,11 +47,11 @@ export default function About() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-200 mb-2">Libraries & Frameworks</h3>
-                <p className="text-gray-500">NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, FastAPI</p>
+                <p className="text-gray-500">NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch, FastAPI, LangChain, LangGraph, ChromaDB</p>
               </div>
               <div>
                 <h3 className="font-semibold text-gray-200 mb-2">ML/AI Expertise</h3>
-                <p className="text-gray-500">Machine Learning, Deep Learning, NLP, RAG, Semantic Search, Explainable AI (SHAP, LIME), Computer Vision (YOLOv8, MediaPipe), ASR (Whisper)</p>
+                <p className="text-gray-500">Machine Learning, Deep Learning, NLP, RAG, Agentic AI, Multi-Agent Systems, LLM Tool Use & Function Calling, Prompt Engineering, Semantic Search, Explainable AI (SHAP, LIME), Computer Vision (YOLOv8, MediaPipe), ASR (Whisper)</p>
               </div>
               <div>
                 <h3 className="font-semibold text-gray-200 mb-2">DBMS & Storage</h3>
