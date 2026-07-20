@@ -10,6 +10,7 @@ export default function ContactForm() {
   });
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -21,9 +22,9 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    setError(false);
 
     try {
-      // Initialize emailjs (replace with your service ID)
       emailjs.init('YOUR_PUBLIC_KEY');
 
       const templateParams = {
@@ -43,8 +44,10 @@ export default function ContactForm() {
       setSubmitted(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
       setTimeout(() => setSubmitted(false), 5000);
-    } catch (error) {
-      console.error('Email sending failed:', error);
+    } catch (err) {
+      console.error('Email sending failed:', err);
+      setError(true);
+      setTimeout(() => setError(false), 5000);
     } finally {
       setLoading(false);
     }
@@ -57,6 +60,12 @@ export default function ContactForm() {
       {submitted && (
         <div className="mb-4 p-4 bg-green-950/30 text-green-400 rounded-lg border border-green-900/50">
           Message sent successfully! I'll get back to you soon.
+        </div>
+      )}
+
+      {error && (
+        <div className="mb-4 p-4 bg-red-950/30 text-red-400 rounded-lg border border-red-900/50">
+          Something went wrong. Please try again or email me directly at rishiv989@gmail.com
         </div>
       )}
 

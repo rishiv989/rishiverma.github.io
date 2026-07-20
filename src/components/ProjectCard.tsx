@@ -1,3 +1,4 @@
+
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -14,10 +15,10 @@ export default function ProjectCard({
   github,
 }: ProjectCardProps) {
   return (
-    <div className="card-dark group">
+    <div className="card-dark p-6 group">
       <h3 className="text-xl font-bold text-gray-100 mb-2 group-hover:text-blue-400 transition">{title}</h3>
       <p className="text-gray-500 mb-4">{description}</p>
-      
+
       <div className="mb-4">
         <p className="text-sm font-semibold text-gray-400 mb-2">Technologies:</p>
         <div className="flex flex-wrap gap-2">

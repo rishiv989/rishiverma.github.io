@@ -8,7 +8,7 @@ export default function About() {
           <h1 className="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">About Me</h1>
 
           <div className="card-dark p-8 mb-8">
-            <h2 className="text-2xl font-bold text-gray-100 mb-4">About Me</h2>
+            <h2 className="text-2xl font-bold text-gray-100 mb-4">Profile</h2>
             <p className="text-gray-500 mb-4">
               I'm an aspiring AI/ML Engineer and Data Science professional with expertise in Python, machine learning models, data visualization, and statistical analysis. I'm passionate about leveraging analytical and problem-solving skills to create scalable AI solutions.
             </p>
@@ -92,9 +92,14 @@ export default function About() {
 
           <div className="card-dark p-8 mb-8">
             <h2 className="text-2xl font-bold text-gray-100 mb-4">Publications & Certifications</h2>
-            <div className="space-y-3">
+            <div className="space-y-4">
               <div className="border-l-4 border-blue-500 pl-4">
-                <p className="text-gray-100">📄 "Enhancing Aircraft Safety through Explainable AI-Based Failure Detection Systems" (2025)</p>
+                <p className="text-gray-100 font-semibold">📄 AeroXAI: An Uncertainty-Aware Causal Explainable AI Framework for Aircraft Engine Predictive Maintenance</p>
+                <p className="text-gray-500 text-sm mt-1">International Journal of Research Publication and Reviews (IJRPR) • Vol 7, Issue 6, pp 5595–5607 • June 2026</p>
+              </div>
+              <div className="border-l-4 border-blue-500 pl-4">
+                <p className="text-gray-100 font-semibold">📄 Enhancing Aircraft Safety through Explainable AI-Based Failure Detection Systems</p>
+                <p className="text-gray-500 text-sm mt-1">International Journal of Research Publication and Reviews (IJRPR) • Vol 6, Issue 11, pp 4376–4379 • November 2025</p>
               </div>
               <div className="border-l-4 border-blue-500 pl-4">
                 <p className="text-gray-100">🏆 Google AI Workshop (2025)</p>
@@ -107,7 +112,8 @@ export default function About() {
 
           <div className="text-center">
             <a
-              href="/resume.pdf"
+              href="/Rishi_CV.pdf"
+              download="Rishi_Verma_CV.pdf"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <Download size={20} />

@@ -16,6 +16,13 @@ export default function Projects() {
       link: '#',
       github: '#',
     },
+    {
+      title: 'Self-Healing RAG Conversational Assistant',
+      description: 'Local Self-Healing Retrieval-Augmented Generation conversational assistant enabling document-based Q&A with contextual memory and intelligent follow-up conversations. Built an end-to-end RAG pipeline with semantic search, vector embeddings, dynamic entity memory, pronoun resolution, and context-grounded answer generation to improve retrieval accuracy and reduce hallucinations. Modular architecture supports reranking, retry-based self-healing, and multi-document retrieval.',
+      technologies: ['Python', 'LangChain', 'ChromaDB', 'Ollama', 'RAG', 'Vector Embeddings', 'Semantic Search', 'FastAPI'],
+      link: '#',
+      github: 'https://github.com/rishiv989/Rag-Self-Healing',
+    },
   ];
 
   return (
